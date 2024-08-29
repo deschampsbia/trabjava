@@ -3,6 +3,7 @@ abstract class Animal {
     private double tamanho;
     private double peso;
     private int idade;
+    private String nome;
 
     public void fazerBarulho() {
         System.out.println("Animal fazendo barulho.");
@@ -38,7 +39,12 @@ abstract class Animal {
     public void setIdade(int idade) {
         this.idade = idade;
     }
-
+    public String getNome(){
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
     //outros métodos
 
     //métodos de acesso 
